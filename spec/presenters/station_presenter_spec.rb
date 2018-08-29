@@ -12,7 +12,7 @@ describe StationPresenter do
     params = {"utf8"=>"✓", "q"=>"80203", "commit"=>"Locate", "controller"=>"search", "action"=>"index"}
       station_presenter = StationPresenter.new(params)
 
-      expect(station_presenter.stations.first).to be_a(Station)
+      expect(station_presenter.all_stations.first).to be_a(Station)
     end
   end
 end

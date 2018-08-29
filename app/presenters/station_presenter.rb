@@ -3,7 +3,7 @@ class StationPresenter
     @service = FuelService.new(params)
   end
 
-  def stations
+  def all_stations
     @service.unsorted_stations.map do |fuel_station|
       Station.new(fuel_station)
     end
