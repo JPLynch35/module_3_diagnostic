@@ -8,7 +8,7 @@ describe 'a user' do
       click_on 'Locate'
 
       expect(current_path).to eq('/search')
-      expect(page).to have_css('.stations')
+      expect(page).to have_css('.stations', count: 10)
       expect(page).to have_content('Fuel Types: ELEC').or have_content('Fuel Types: Propane')
       within('.station-1') do
         expect(page).to have_content('Name:')

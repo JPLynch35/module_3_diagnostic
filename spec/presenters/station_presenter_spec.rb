@@ -13,6 +13,7 @@ describe StationPresenter do
       station_presenter = StationPresenter.new(params)
 
       expect(station_presenter.all_stations.first).to be_a(Station)
+      expect(station_presenter.all_stations.count).to eq(10)
     end
   end
 end
