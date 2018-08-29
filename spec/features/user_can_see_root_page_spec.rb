@@ -6,7 +6,7 @@ describe 'a user' do
       visit '/'
       fill_in :q, with: '80203'
       click_on 'Locate'
-
+save_and_open_page
       expect(current_path).to eq('/search')
       expect(page).to have_css('.stations', count: 10)
       expect(page).not_to have_content('Fuel Types: BD')
