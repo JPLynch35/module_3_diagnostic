@@ -1,4 +1,6 @@
 class Station
+  attr_reader :name, :address, :fuel_types, :distance, :access
+
   def initialize(data_set)
     @name = data_set[:station_name]
     @address = data_set[:street_address]
