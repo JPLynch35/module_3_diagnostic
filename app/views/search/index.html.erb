@@ -1,9 +1,9 @@
-<% @stations.each do |station| %>
-  <div class="stations station-<%= station.id %>">
+<% @stations.each_with_index do |station, index| %>
+  <div class="stations station-<%= index + 1 %>">
     <p>Name: <%= station.name %></p>
     <p>Address: <%= station.address %></p>
     <p>Fuel Types: <%= station.fuel_types %></p>
     <p>Distance: <%= station.distance %></p>
-    <p>Access: <%= station.access %></p>
+    <p>Access Times: <%= station.access %></p>
   </div>
 <% end %>

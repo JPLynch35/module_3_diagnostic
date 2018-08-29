@@ -15,7 +15,7 @@ describe 'a user' do
         expect(page).to have_content('Address:')
         expect(page).to have_content('Fuel Types:')
         expect(page).to have_content('Distance:')
-        expect(page).to have_content('Access:')
+        expect(page).to have_content('Access Times:')
       end
     end
   end
