@@ -1,0 +1,11 @@
+<% @presenter.all_stations.each_with_index do |station, index| %>
+  <div class="stations station-<%= index + 1 %>">
+    <ul>
+    <li>Name: <%= station.name %></li>
+    <li>Address: <%= station.address %></li>
+    <li>Fuel Types: <%= station.fuel_types %></li>
+    <li>Distance: <%= station.distance %></li>
+    <li>Access Times: <%= station.access %></li>
+    </ul>
+  </div>
+<% end %>

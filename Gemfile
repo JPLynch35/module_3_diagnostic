@@ -32,5 +32,6 @@ group :test do
   gem 'vcr'
   gem 'webmock'
   gem 'capybara'
+  gem 'orderly'
 end
 
