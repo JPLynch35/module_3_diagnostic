@@ -9,8 +9,7 @@ describe 'a user' do
 
       expect(current_path).to eq('/search')
       expect(page).to have_css('stations', 10)
-      expect(page).to have_content()
-      expect(page)
+      expect(page).to have_content('Fuel Types: Electric').or have_content('Fuel Types: Propane')
       within('station-1') do
         expect(page).to have_content('Name:')
         expect(page).to have_content('Address:')
